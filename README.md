@@ -1,2 +1,2 @@
-# My-first-repository
-hello github
+# 用于学习视觉SLAM十四讲这本书
+hello SLAM
