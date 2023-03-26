@@ -6,3 +6,4 @@ include_directories( "/usr/local/include/eigen3" )
 
 add_executable(Get_block Get_block.cpp)
 
+add_executable(Solve_linear_equations Solve_linear_equations.cpp)
