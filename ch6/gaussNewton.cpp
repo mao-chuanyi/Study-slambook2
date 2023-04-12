@@ -17,7 +17,7 @@ int main (int argc, char **argv)
     // number of data points
     int N = 100;
     // noise sigma
-    double w_sigma = 1.0;
+    double w_sigma = 1.0; //标准差
     double inv_sigma = 1.0 / w_sigma;
     cv::RNG rng; // random number generator
 
@@ -71,7 +71,7 @@ int main (int argc, char **argv)
         c_est += dx[2];
 
         lastCost = cost;
-        cout << "total cost: " << cost <<
+        cout << "total cost: " << cost << "\t\tupdate: " << dx.transpose() <<
              ",\t\testimated params: " << a_est << "," << b_est << "," << c_est << endl;
     }
     chrono::steady_clock::time_point t2 = chrono::steady_clock::now();
